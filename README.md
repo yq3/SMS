@@ -1,6 +1,8 @@
 # SMS
 Student Management System 学生管理系统 Java+Java Swing+JDBC+MySQL 练手项目
 
+个人博文：[学生管理系统开发总结](https://yq3.github.io/2020/02/29/%E5%AD%A6%E7%94%9F%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E5%BC%80%E5%8F%91%E6%80%BB%E7%BB%93/)
+
 注意：JDBC、C3P0、DBCP 的配置文件中 user 是 root，密码留空，请自行填写自己的密码！
 
 1. 程序的主要功能界面：登录与注册界面、学生界面、教师界面、管理员界面。不同身份的人登陆进去，所能使用的功能模块是有区别的，比如学生登录进去只能看到自己的信息和成绩，而无法进行信息和成绩的编辑操作（那是教师的功能），也无法进行用户信息的编辑（那是管理员的功能）。
@@ -16,3 +18,11 @@ Student Management System 学生管理系统 Java+Java Swing+JDBC+MySQL 练手�
 6. MySQL 中的3张表是各自建的，表间没有建立关联，即可能会出现这样一个 bug：同一用户名（学号）在信息表和成绩表中会对应不同的学生姓名。
 
 7. 在添加学生生日信息的时候，使用了 [LGoodDatePicker](https://github.com/LGoodDatePicker/LGoodDatePicker) 控件，在此表示感谢。
+
+![登录和注册界面](screenshot/1.png)
+
+![学生的成绩查询界面](screenshot/2.png)
+
+![教师的学生信息编辑界面](screenshot/3.png)
+
+![管理员的用户信息编辑界面](screenshot/4.png)
